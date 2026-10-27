@@ -1,8 +1,8 @@
 # flow-calculator-
 
-# Calculateur de débit de perfusion (v0)
+# Calculateur de débit de perfusion (v0.0.1)
 
-Petit programme en console, écrit pour m'entraîner en Python et pour vérifier mes calculs de dose pendant mes révisions d'IFSI.
+Petit programme en console, écrit pour m'entraîner en Python et pour vérifier mes calculs de dose pendant mes révisions à l'IFSI.
 
 !!! **Outil d'entraînement uniquement : à ne pas utiliser pour de vrais soins.** !!! 
 Il ne dispense pas d'une vérification humaine et ne détecte ni interactions médicamenteuses ni erreurs de prescription.
@@ -12,7 +12,8 @@ Il ne dispense pas d'une vérification humaine et ne détecte ni interactions m�
 - Calcule le débit d'une perfusion en gouttes/min (gouttes/mL × volume total ÷ durée en minutes).
 
 ## Lancer le programme
-Python 3 requis, aucune bibliothèque à installer
+Python 3 requis, aucune bibliothèque à installer.
+Ouvrir dans le terminal / en console.
 
 ## Exemple
 500 mg prescrits, ampoule de 1 000 mg pour 10 mL, poche de 250 mL, 20 gouttes/mL, durée 0,5 h
@@ -22,10 +23,16 @@ Python 3 requis, aucune bibliothèque à installer
 - Doses en mg, volumes en mL.
 - Volume total = volume de la poche + volume du médicament ajouté.
 
-## Limites connues (v0)
-- Aucune vérification des saisies : le programme plante sur du texte, un 0, ou une virgule dans la durée.
-- Le menu demande une saisie exacte.
-- Seule la perfusion est disponible (SAP, PSE et transfusion à venir).
+## Historique des versions
+- v0.0.1 : prise en compte des virgules ; donne le débit exact et le débit arrondi
+- v0.0.0 : programme initial
 
 ## Prochaines versions
 Vérification des saisies, convertisseur d'unités, SAP et PSE, tests.
+
+## Limites connues (v0)
+- Aucune vérification des saisies : le programme plante sur du texte ou un 0.
+- Le menu demande une saisie exacte.
+- Seule la perfusion est disponible (SAP, PSE et transfusion à venir).
+
+
